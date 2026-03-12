@@ -36,9 +36,18 @@ function playGame(playerChoice) {
     document.getElementById("winner").textContent = result;
     document.getElementById("score1").textContent = playerScore;
     document.getElementById("score2").textContent = computerScore;
+
+    if(score1 === 5){
+document.getElementById("winner").innerText = "Player 1 wins the game!";
 }
 
-function restartGame() {                     // ← new
+if(score2 === 5){
+document.getElementById("winner").innerText = "Computer wins the game!";
+}
+
+}
+
+function restartGame() {
     playerScore = 0;
     computerScore = 0;
     document.getElementById("score1").textContent = "0";
@@ -47,3 +56,9 @@ function restartGame() {                     // ← new
     document.getElementById("p2-choice").textContent = "-";
     document.getElementById("winner").textContent = "Choose your move";
 }
+
+
+
+
+
+
