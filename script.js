@@ -36,15 +36,7 @@ function playGame(playerChoice) {
     document.getElementById("winner").textContent = result;
     document.getElementById("score1").textContent = playerScore;
     document.getElementById("score2").textContent = computerScore;
-
-    if(score1 === 5){
-document.getElementById("winner").innerText = "Player 1 wins the game!";
-}
-
-if(score2 === 5){
-document.getElementById("winner").innerText = "Computer wins the game!";
-}
-
+    
 }
 
 function restartGame() {
